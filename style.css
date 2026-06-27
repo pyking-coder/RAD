@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-base);
+    background: var(--bg-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-6);
+}
+@media (max-width: 600px) {
+    body {
+        padding: var(--space-6) var(--space-4);
+    }
+}
+:root {
+  --bg-base:      #0a0a0a;
+  --bg-surface:   #111111;
+  --bg-hover:     #1a1a1a;
+  --text-primary:   #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted:     #555555;
+  --accent:       #4a9eff;
+  --accent-dim:   #1a3a6a;
+  --border:       #1e1e1e;
+  --border-hover: #333333;
+}
+
+body       { background: var(--bg-base); color: var(--text-secondary); }
+h1, h2, h3 { color: var(--text-primary); }
+a          { color: var(--accent); text-decoration: none; }
+a:hover    { text-decoration: underline; }
+code, .code-tag {
+    font-family: 'JetBrains Mono', monospace;
+}
+:root {
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2x1: 1.5rem;
+    --text-4x1: 2.25rem;
+}
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-xl); }
+p  { font-size: var(--text-base); }
+
+:root {
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+}
+:root {
+  --bg-base:      #0a0a0a;
+  --bg-surface:   #111111;
+  --bg-hover:     #1a1a1a;
+  --text-primary:   #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted:     #555555;
+  --accent:       #4a9eff;
+  --accent-dim:   #1a3a6a;
+  --border:       #1e1e1e;
+  --border-hover: #333333;
+}
+
+body       { background: var(--bg-base); color: var(--text-secondary); }
+h1, h2, h3 { color: var(--text-primary); }
+a          { color: var(--accent); text-decoration: none; }
+a:hover    { text-decoration: underline; }
+
+
+header {
+    padding: var(--space-16) 0 var(--space-8);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-12);
+}
+
+h1 {
+    font-size: var(--text-4xl);
+    line-height: 1.1;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    text-shadow: 0 0 40px rgba(74,158,255,0.15);
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg,#ffffff 0%,var(--accent) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+.tagline {
+    color:var(--text-muted);
+    font-size: var(--text-sm);
+    margin-top: var(--space-2);
+    font-family: 'JetBrains Mono',monospace;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #4a9eff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: .75rem;
+    font-weight: 500;
+}
+section {
+    margin-bottom: var(--space-12);
+    padding-bottom: var(--space-12);
+    border-bottom: 1px solid #1e1e1e;
+
+}
+
+section:last-child{
+    border-bottom: none;
+}
+
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: var(--space-4);
+}
+.tag{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    padding: .25rem .75rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-hover);
+    color: var(--text-muted);
+    background: var(--bg-surface);
+    transition: border-color .2s, color .2s;
+
+}
+.tag:hover{
+    border-color: var(--accent);
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+footer {
+    border-top: 1px solid #222;
+    padding-top: 1.5rem;
+    color: #444;
+    font-size: .85rem;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+main {
+    animation: fadeUp 0.5s ease forwards;
+}
+header {
+    animation: fadeUp 0.4s ease forwards;
+}
+a, button, .tag {
+    transition: color .2s ease,
+                background .2s ease,
+                border-color .2s ease, 
+                transform .2s ease;
+                
+}
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50%      {opacity: 0;}
+}
+.cursor {
+    color: var(--accent);
+    animation: blink 1s step-end infinite;
+    font-weight: 300;
+}
