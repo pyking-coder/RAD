@@ -187,3 +187,143 @@ a, button, .tag {
     animation: blink 1s step-end infinite;
     font-weight: 300;
 }
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,min max(280px,1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+.projects-card{
+    background: #111111;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    transition: border-color .2s ease, transform .2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+.projects-card:hover {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: .75rem;
+}
+.card-title {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.card-arrow {
+    font-size: 1.1rem;
+    color: #333;
+    flex-shrink: 0;
+    transition: color .2s, transform .2s;
+}
+.projects-card:hover .card-arrow {
+    color: var(--accent);
+    transform: translate(2px,-2px);
+}
+
+.card-desc {
+    font-size: .875rem;
+    color: #777;
+    line-height: 1.65;
+    flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .375rem;
+  margin-top: .25rem;
+}
+
+.card-tag {
+  font-size: .7rem;
+  font-family: 'JetBrains Mono', monospace;
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  border: 1px solid #2a2a2a;
+  color: #555;
+  background: #0f0f0f;
+}
+
+/* Status badge */
+.card-status {
+  font-size: .65rem;
+  font-family: 'JetBrains Mono', monospace;
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.status-building {
+  background: #1a2a0a;
+  color: #6aaa2a;
+  border: 1px solid #2a4a0a;
+}
+
+.status-live {
+  background: #0a1a3a;
+  color: #4a9eff;
+  border: 1px solid #0a2a6a;
+}
+
+.status-concept {
+  background: #1a1a0a;
+  color: #aa8a2a;
+  border: 1px solid #3a3a0a;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.project-card {
+  background: #111111;
+  border: 1px solid #1e1e1e;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  transition: border-color .2s ease, transform .2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  border-color: #4a9eff;
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.card-title { font-size: 1rem; font-weight: 500; color: #f0f0f0; }
+
+.card-arrow { font-size: 1.1rem; color: #333; flex-shrink: 0; transition: color .2s, transform .2s; }
+
+.project-card:hover .card-arrow { color: #4a9eff; transform: translate(2px, -2px); }
+
+.card-desc { font-size: .875rem; color: #777; line-height: 1.65; flex: 1; }
+
+.card-tags { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: .25rem; }
+
+.card-tag { font-size: .7rem; font-family: monospace; padding: .2rem .6rem; border-radius: 20px; border: 1px solid #2a2a2a; color: #555; background: #0f0f0f; }
+
+.card-status { font-size: .65rem; font-family: monospace; padding: .2rem .6rem; border-radius: 20px; align-self: flex-start; }
+
+.status-building { background: #1a2a0a; color: #6aaa2a; border: 1px solid #2a4a0a; }
+.status-live { background: #0a1a3a; color: #4a9eff; border: 1px solid #0a2a6a; }
+.status-concept { background: #1a1a0a; color: #aa8a2a; border: 1px solid #3a3a0a; }
