@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | KMFG Solutions</title>
+  <meta name="description" content="Browse completed projects by KMFG Solutions." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ 
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo-link"><img src="assets/images/logo.png" alt="KMFG Solutions" class="logo-img"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="g-hero">
+    <div class="g-hero-bg"><div class="g-hero-grid"></div></div>
+    <div class="container g-hero-inner">
+      <div class="g-hero-content">
+        <p class="hero-tag reveal">Our Portfolio</p>
+        <h1 class="g-hero-title reveal delay-1">BUILT WITH<br><em>PRIDE.</em></h1>
+        <p class="g-hero-sub reveal delay-2">Every project is a commitment kept. Browse our work across all five service lines — each one a benchmark of the KMFG standard.</p>
+      </div>
+      <div class="g-hero-counts reveal delay-3">
+        <div class="g-count-item">
+          <span class="g-count-num" data-count="200">0</span><span class="g-count-suffix">+</span>
+          <p class="g-count-label">Projects</p>
+        </div>
+        <div class="g-count-divider"></div>
+        <div class="g-count-item">
+          <span class="g-count-num" data-count="5">0</span>
+          <p class="g-count-label">Industries</p>
+        </div>
+        <div class="g-count-divider"></div>
+        <div class="g-count-item">
+          <span class="g-count-num" data-count="10">0</span><span class="g-count-suffix">+</span>
+          <p class="g-count-label">Years</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <div class="g-filter-wrap">
+    <div class="container">
+      <div class="g-filter reveal">
+        <button class="g-filter-btn active" data-filter="all"><span class="g-filter-dot"></span>All</button>
+        <button class="g-filter-btn" data-filter="construction"><span class="g-filter-dot"></span>Construction</button>
+        <button class="g-filter-btn" data-filter="security"><span class="g-filter-dot"></span>Security</button>
+        <button class="g-filter-btn" data-filter="supply"><span class="g-filter-dot"></span>Logistics</button>
+        <button class="g-filter-btn" data-filter="marketing"><span class="g-filter-dot"></span>Marketing</button>
+        <button class="g-filter-btn" data-filter="project"><span class="g-filter-dot"></span>Project Mgmt</button>
+        <button class="g-filter-btn" data-filter="video"><span class="g-filter-dot"></span>Videos</button>
+      </div>
+      <p class="g-count-display">Showing <strong id="countNum">33</strong> items</p>
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <section class="g-section">
+    <div class="container">
+      <div class="g-grid" id="galleryGrid">
+
+        <!-- ── CONSTRUCTION (10 photos) ─────────────────── -->
+
+        <!-- C01 — Large featured -->
+        <div class="g-card g-card-large reveal" data-category="construction" data-index="0">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-01.jpg" alt="Residential Build" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-01.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Residential Build</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="0">View Project →</button>
+              </div>
+              <div class="g-card-badge">Featured</div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Residential Build — Johannesburg</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C02 -->
+        <div class="g-card reveal delay-1" data-category="construction" data-index="1">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-02.jpg" alt="Foundation Work" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-02.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Foundation Work</h3>
+                <p class="g-hover-loc">📍 Gauteng</p>
+                <button class="g-hover-btn" data-index="1">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Foundation Work</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- V01 — Video -->
+        <div class="g-card g-card-video reveal delay-2" data-category="video" data-index="2">
+          <div class="g-card-inner">
+            <div class="g-card-media g-video-media">
+              <video class="g-video" src="assets/videos/video-01.mp4" muted loop playsinline preload="metadata"></video>
+              <div class="g-video-overlay" data-index="2">
+                <div class="g-play-btn"><div class="g-play-icon">▶</div></div>
+                <div class="g-video-info">
+                  <p class="g-hover-tag">Video</p>
+                  <h3 class="g-hover-title">Project Showcase</h3>
+                </div>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Project Showcase — Video 01</p><p class="g-card-cat">video-01.mp4</p></div>
+              <div class="g-card-arrow">▶</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C03 -->
+        <div class="g-card reveal delay-1" data-category="construction" data-index="3">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-03.jpg" alt="Commercial Build" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏢</span><p class="g-ph-label">construction-03.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Commercial Build</h3>
+                <p class="g-hover-loc">📍 Sandton</p>
+                <button class="g-hover-btn" data-index="3">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Commercial Build</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C04 -->
+        <div class="g-card reveal delay-2" data-category="construction" data-index="4">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-04.jpg" alt="Renovation Project" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-04.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Renovation Project</h3>
+                <p class="g-hover-loc">📍 Soweto</p>
+                <button class="g-hover-btn" data-index="4">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Renovation Project</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C05 — Large -->
+        <div class="g-card g-card-large reveal delay-3" data-category="construction" data-index="5">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-05.jpg" alt="Property Maintenance" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🔧</span><p class="g-ph-label">construction-05.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Property Maintenance</h3>
+                <p class="g-hover-loc">📍 Pretoria</p>
+                <button class="g-hover-btn" data-index="5">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Property Maintenance — Pretoria</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C06 -->
+        <div class="g-card reveal delay-1" data-category="construction" data-index="6">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-06.jpg" alt="Roofing Project" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-06.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Roofing Project</h3>
+                <p class="g-hover-loc">📍 Midrand</p>
+                <button class="g-hover-btn" data-index="6">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Roofing Project</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- V02 — Video -->
+        <div class="g-card g-card-video reveal delay-2" data-category="video" data-index="7">
+          <div class="g-card-inner">
+            <div class="g-card-media g-video-media">
+              <video class="g-video" src="assets/videos/video-02.mp4" muted loop playsinline preload="metadata"></video>
+              <div class="g-video-overlay" data-index="7">
+                <div class="g-play-btn"><div class="g-play-icon">▶</div></div>
+                <div class="g-video-info">
+                  <p class="g-hover-tag">Video</p>
+                  <h3 class="g-hover-title">On-Site Walkthrough</h3>
+                </div>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">On-Site Walkthrough — Video 02</p><p class="g-card-cat">video-02.mp4</p></div>
+              <div class="g-card-arrow">▶</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C07 -->
+        <div class="g-card reveal delay-3" data-category="construction" data-index="8">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-07.jpg" alt="Interior Finishing" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏠</span><p class="g-ph-label">construction-07.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Interior Finishing</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="8">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Interior Finishing</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C08 -->
+        <div class="g-card reveal delay-1" data-category="construction" data-index="9">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-08.jpg" alt="Exterior Works" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-08.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Exterior Works</h3>
+                <p class="g-hover-loc">📍 Gauteng</p>
+                <button class="g-hover-btn" data-index="9">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Exterior Works</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECURITY (8 photos) ──────────────────────── -->
+
+        <!-- S01 — Large -->
+        <div class="g-card g-card-large reveal delay-2" data-category="security" data-index="10">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-01.jpg" alt="Automated Gate Installation" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🔒</span><p class="g-ph-label">security-01.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Automated Gate Installation</h3>
+                <p class="g-hover-loc">📍 Pretoria</p>
+                <button class="g-hover-btn" data-index="10">View Project →</button>
+              </div>
+              <div class="g-card-badge">Security</div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Automated Gate Installation — Pretoria</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S02 -->
+        <div class="g-card reveal delay-3" data-category="security" data-index="11">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-02.jpg" alt="Gate Motor Installation" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">⚙️</span><p class="g-ph-label">security-02.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Gate Motor Installation</h3>
+                <p class="g-hover-loc">📍 Midrand</p>
+                <button class="g-hover-btn" data-index="11">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Gate Motor Installation</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S03 -->
+        <div class="g-card reveal delay-1" data-category="security" data-index="12">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-03.jpg" alt="Perimeter Fencing" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🛡️</span><p class="g-ph-label">security-03.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Perimeter Fencing</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="12">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Perimeter Fencing</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S04 -->
+        <div class="g-card reveal delay-2" data-category="security" data-index="13">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-04.jpg" alt="Structural Welding" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🔩</span><p class="g-ph-label">security-04.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Structural Welding</h3>
+                <p class="g-hover-loc">📍 Centurion</p>
+                <button class="g-hover-btn" data-index="13">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Structural Welding</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S05 -->
+        <div class="g-card reveal delay-3" data-category="security" data-index="14">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-05.jpg" alt="Access Control" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🔐</span><p class="g-ph-label">security-05.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Access Control System</h3>
+                <p class="g-hover-loc">📍 Sandton</p>
+                <button class="g-hover-btn" data-index="14">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Access Control System</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- V03 — Video -->
+        <div class="g-card g-card-video reveal delay-1" data-category="video" data-index="15">
+          <div class="g-card-inner">
+            <div class="g-card-media g-video-media">
+              <video class="g-video" src="assets/videos/video-03.mp4" muted loop playsinline preload="metadata"></video>
+              <div class="g-video-overlay" data-index="15">
+                <div class="g-play-btn"><div class="g-play-icon">▶</div></div>
+                <div class="g-video-info">
+                  <p class="g-hover-tag">Video</p>
+                  <h3 class="g-hover-title">Team In Action</h3>
+                </div>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Team In Action — Video 03</p><p class="g-card-cat">video-03.mp4</p></div>
+              <div class="g-card-arrow">▶</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S06 -->
+        <div class="g-card reveal delay-2" data-category="security" data-index="16">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-06.jpg" alt="Electric Fencing" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">⚡</span><p class="g-ph-label">security-06.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">Electric Fencing</h3>
+                <p class="g-hover-loc">📍 Roodepoort</p>
+                <button class="g-hover-btn" data-index="16">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Electric Fencing</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S07 -->
+        <div class="g-card reveal delay-3" data-category="security" data-index="17">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/security/security-07.jpg" alt="CCTV Installation" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📷</span><p class="g-ph-label">security-07.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Security</div>
+                <h3 class="g-hover-title">CCTV Installation</h3>
+                <p class="g-hover-loc">📍 Soweto</p>
+                <button class="g-hover-btn" data-index="17">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">CCTV Installation</p><p class="g-card-cat">Security Services & Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SUPPLY CHAIN (5 photos) ──────────────────── -->
+
+        <!-- SC01 — Large -->
+        <div class="g-card g-card-large reveal delay-1" data-category="supply" data-index="18">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/supply/supply-01.jpg" alt="Procurement Project" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📦</span><p class="g-ph-label">supply-01.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">LOGISTICS</div>
+                <h3 class="g-hover-title">Large Scale Procurement</h3>
+                <p class="g-hover-loc">📍 Cape Town</p>
+                <button class="g-hover-btn" data-index="18">View Project →</button>
+              </div>
+              <div class="g-card-badge">LOGISTICS</div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Large Scale Procurement — Cape Town</p><p class="g-card-cat">Logistics Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SC02 -->
+        <div class="g-card reveal delay-2" data-category="supply" data-index="19">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/supply/supply-02.jpg" alt="Logistics Management" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🚛</span><p class="g-ph-label">supply-02.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Logistics</div>
+                <h3 class="g-hover-title">Logistics Management</h3>
+                <p class="g-hover-loc">📍 Durban</p>
+                <button class="g-hover-btn" data-index="19">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Logistics Management</p><p class="g-card-cat">Logistics Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SC03 -->
+        <div class="g-card reveal delay-3" data-category="supply" data-index="20">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/supply/supply-03.jpg" alt="Vendor Relations" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🤝</span><p class="g-ph-label">supply-03.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Logistics</div>
+                <h3 class="g-hover-title">Vendor Relations</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="20">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Vendor Relations</p><p class="g-card-cat">Logistics Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SC04 -->
+        <div class="g-card reveal delay-1" data-category="supply" data-index="21">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/supply/supply-04.jpg" alt="Inventory Management" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📋</span><p class="g-ph-label">supply-04.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Logistics</div>
+                <h3 class="g-hover-title">Inventory Management</h3>
+                <p class="g-hover-loc">📍 Pretoria</p>
+                <button class="g-hover-btn" data-index="21">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Inventory Management</p><p class="g-card-cat">Logistics Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SC05 -->
+        <div class="g-card reveal delay-2" data-category="supply" data-index="22">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/supply/supply-05.jpg" alt="Cost Optimisation" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📊</span><p class="g-ph-label">supply-05.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Logistics</div>
+                <h3 class="g-hover-title">Cost Optimisation</h3>
+                <p class="g-hover-loc">📍 Gauteng</p>
+                <button class="g-hover-btn" data-index="22">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Cost Optimisation</p><p class="g-card-cat">Logistics Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── MARKETING (4 photos) ─────────────────────── -->
+
+        <!-- M01 — Large -->
+        <div class="g-card g-card-large reveal delay-3" data-category="marketing" data-index="23">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/marketing/marketing-01.jpg" alt="Brand Campaign" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📣</span><p class="g-ph-label">marketing-01.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Marketing</div>
+                <h3 class="g-hover-title">Brand Campaign</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="23">View Project →</button>
+              </div>
+              <div class="g-card-badge">Marketing</div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Brand Campaign — Johannesburg</p><p class="g-card-cat">Marketing Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- M02 -->
+        <div class="g-card reveal delay-1" data-category="marketing" data-index="24">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/marketing/marketing-02.jpg" alt="Digital Marketing" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">💻</span><p class="g-ph-label">marketing-02.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Marketing</div>
+                <h3 class="g-hover-title">Digital Marketing</h3>
+                <p class="g-hover-loc">📍 Sandton</p>
+                <button class="g-hover-btn" data-index="24">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Digital Marketing</p><p class="g-card-cat">Marketing Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- M03 -->
+        <div class="g-card reveal delay-2" data-category="marketing" data-index="25">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/marketing/marketing-03.jpg" alt="Social Media Campaign" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📱</span><p class="g-ph-label">marketing-03.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Marketing</div>
+                <h3 class="g-hover-title">Social Media Campaign</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="25">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Social Media Campaign</p><p class="g-card-cat">Marketing Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- M04 -->
+        <div class="g-card reveal delay-3" data-category="marketing" data-index="26">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/marketing/marketing-04.jpg" alt="Content Creation" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🎨</span><p class="g-ph-label">marketing-04.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Marketing</div>
+                <h3 class="g-hover-title">Content Creation</h3>
+                <p class="g-hover-loc">📍 Pretoria</p>
+                <button class="g-hover-btn" data-index="26">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Content Creation</p><p class="g-card-cat">Marketing Solutions</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT MANAGEMENT (5 photos) ───────────── -->
+
+        <!-- P01 — Large -->
+        <div class="g-card g-card-large reveal delay-1" data-category="project" data-index="27">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/project/project-01.jpg" alt="Multi-Site Rollout" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📋</span><p class="g-ph-label">project-01.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Project Management</div>
+                <h3 class="g-hover-title">Multi-Site Rollout</h3>
+                <p class="g-hover-loc">📍 Gauteng</p>
+                <button class="g-hover-btn" data-index="27">View Project →</button>
+              </div>
+              <div class="g-card-badge">Project Mgmt</div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Multi-Site Rollout — Gauteng</p><p class="g-card-cat">Project Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P02 -->
+        <div class="g-card reveal delay-2" data-category="project" data-index="28">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/project/project-02.jpg" alt="Site Planning" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">📐</span><p class="g-ph-label">project-02.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Project Management</div>
+                <h3 class="g-hover-title">Site Planning</h3>
+                <p class="g-hover-loc">📍 Johannesburg</p>
+                <button class="g-hover-btn" data-index="28">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Site Planning</p><p class="g-card-cat">Project Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P03 -->
+        <div class="g-card reveal delay-3" data-category="project" data-index="29">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/project/project-03.jpg" alt="Stakeholder Meeting" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🤝</span><p class="g-ph-label">project-03.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Project Management</div>
+                <h3 class="g-hover-title">Stakeholder Meeting</h3>
+                <p class="g-hover-loc">📍 Sandton</p>
+                <button class="g-hover-btn" data-index="29">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Stakeholder Meeting</p><p class="g-card-cat">Project Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P04 -->
+        <div class="g-card reveal delay-1" data-category="project" data-index="30">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/project/project-04.jpg" alt="Quality Assurance" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">✅</span><p class="g-ph-label">project-04.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Project Management</div>
+                <h3 class="g-hover-title">Quality Assurance</h3>
+                <p class="g-hover-loc">📍 Midrand</p>
+                <button class="g-hover-btn" data-index="30">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Quality Assurance</p><p class="g-card-cat">Project Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P05 -->
+        <div class="g-card reveal delay-2" data-category="project" data-index="31">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/project/project-05.jpg" alt="Project Handover" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏁</span><p class="g-ph-label">project-05.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Project Management</div>
+                <h3 class="g-hover-title">Project Handover</h3>
+                <p class="g-hover-loc">📍 Pretoria</p>
+                <button class="g-hover-btn" data-index="31">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Project Handover</p><p class="g-card-cat">Project Management</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C09 — Extra construction -->
+        <div class="g-card reveal delay-3" data-category="construction" data-index="32">
+          <div class="g-card-inner">
+            <div class="g-card-media">
+              <img src="assets/images/services/construction/construction-09.jpg" alt="Site Progress" class="g-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="g-placeholder" style="display:none"><div class="g-placeholder-shimmer"></div><div class="g-placeholder-content"><span class="g-ph-icon">🏗️</span><p class="g-ph-label">construction-09.jpg</p></div></div>
+              <div class="g-card-hover">
+                <div class="g-hover-tag">Construction</div>
+                <h3 class="g-hover-title">Site Progress</h3>
+                <p class="g-hover-loc">📍 Gauteng</p>
+                <button class="g-hover-btn" data-index="32">View Project →</button>
+              </div>
+            </div>
+            <div class="g-card-foot">
+              <div><p class="g-card-title">Site Progress</p><p class="g-card-cat">Construction & Property Maintenance</p></div>
+              <div class="g-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     <!-- EMPTY STATE -->
+      <div class="g-empty" id="galleryEmpty">
+        <div class="g-empty-icon">📂</div>
+        <h3>No projects in this category yet</h3>
+        <p>More projects are being added. Check back soon.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+          
+      
+
+  <!-- LIGHTBOX -->
+  <div class="g-lightbox" id="lightbox">
+    <div class="g-lb-backdrop" id="lbBackdrop"></div>
+    <div class="g-lb-panel">
+      <button class="g-lb-close" id="lbClose">✕</button>
+      <div class="g-lb-media" id="lbMedia">
+        <div class="g-lb-media-shimmer"></div>
+        <div class="g-lb-icon" id="lbIcon">🏗️</div>
+      </div>
+      <div class="g-lb-body">
+        <p class="g-lb-cat" id="lbCat">Category</p>
+        <h3 class="g-lb-title" id="lbTitle">Project Title</h3>
+        <p class="g-lb-loc" id="lbLoc">📍 Location</p>
+        <div class="g-lb-divider"></div>
+        <p class="g-lb-desc" id="lbDesc">Description</p>
+        <div class="g-lb-tags" id="lbTags"></div>
+        <a href="contact.html" class="btn btn-gold">Start a Similar Project</a>
+        <div class="g-lb-nav">
+          <button class="g-lb-nav-btn" id="lbPrev">← Previous</button>
+          <span class="g-lb-counter" id="lbCounter">1 / 33</span>
+          <button class="g-lb-nav-btn" id="lbNext">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg-text">WORK</div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>LIKE WHAT<br>YOU <span>SEE?</span></h2>
+        <p>Let's talk about your project. Free quote, no obligation.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-gold">Get a Free Quote</a>
+          <a href="services.html" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link"><img src="assets/images/logo.png" alt="KMFG Solutions" class="logo-img logo-img-footer"></a>
+          <p>KMFG Solutions — value in Construction, Security, Supply Chain, Marketing and Project Management across South Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:0659882436"><i class="fa-solid fa-phone"></i> 065 988 2436</a>
+          <a href="https://wa.me/27659882436" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:khulumlambofamilygroup@gmail.com"><i class="fa-solid fa-envelope"></i> KMFG@Consultant.com</a>
+          <a href="https://www.facebook.com/share/18n5E9DChx/" target="_blank"><i class="fa-brands fa-facebook-f"></i> KMFG Solutions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KMFG Solutions. All rights reserved.</p>
+        <p class="footer-credit">Built by <span>ZypherixLabs</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="Zypherix-lock.js"></script>
+  <script src="countdown.js"></script>
+  <script src="loader.js"></script>
+  <script src="theme.js"></script>
+
+</body>
+</html>

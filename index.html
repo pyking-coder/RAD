@@ -1,50 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            RAD-Developer
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KMFG Solutions | Your Trusted Partner for Home & Business Solutions</title>
+  <meta name="description" content="KMFG Solutions — a B-BBEE Level 1, 100% Black owned business delivering property maintenance, security, supply chain, marketing and project management across South Africa." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="logo-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
 <body>
 
-    <header>
-        <h1>Randall Awakhiwe Dube<span class="cursor">_</span></h1>
-        <p class="tagline">CS Student - Builder - Problem Solver</p>
-    </header>
-    <main>
-        <section class="about">
-           <h2>About Me</h2>
-           <p>
-            I am a CS student in Johannesburg building full-stack apps, AI tool, and learning cybersecurity. I build things that give power, access, and voice to people who currently have none of it.
-           </p>
-        </section>
-        <section>
-            <h2>Currently Learning</h2>
-            <div class="tags">
-                
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Python</span>
-                <span class="tag">AI APIs</span>
-                <span class="tag">CyberSesurity</span>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="KMFG Solutions" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-diagonal"></div>;
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-tag">B-BBEE Level 1 · 100% Black Owned · Reg. 2026/486422/07</p>
+        <h1>YOUR TRUSTED<br>PARTNER FOR<br><em>HOME & BUSINESS.</em></h1>
+        <p class="hero-sub">Helping South African homeowners and businesses with reliable, high-quality solutions — from Property Maintenance and Security to Supply Chain, Marketing and Project Management.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-gold">Get a Free Quote</a>
+          <a href="services.html" class="btn btn-ghost">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-stats reveal delay-2">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-num" data-count="1">0</div>
+            <div class="stat-label">B-BBEE Level</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-count="100">0</div>
+            <div class="stat-label">% Black Owned</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-count="5">0</div>
+            <div class="stat-label">Service Divisions</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-count="9">0</div>
+            <div class="stat-label">Provinces Served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Property Maintenance <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Construction <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Security Solutions <span class="marquee-dot"></span></span>
+      <span class="marquee-item">CCTV Installation <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Electrical Services <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Plumbing <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Logistics<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Project Management <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Marketing Solutions <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Gate Automation <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Electric Fencing <span class="marquee-dot"></span></span>
+      <span class="marquee-item">B-BBEE Level 1 <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Property Maintenance <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Construction <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Security Solutions <span class="marquee-dot"></span></span>
+      <span class="marquee-item">CCTV Installation <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Electrical Services <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Plumbing <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Supply Chain <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Project Management <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Marketing Solutions <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Gate Automation <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Electric Fencing <span class="marquee-dot"></span></span>
+      <span class="marquee-item">B-BBEE Level 1 <span class="marquee-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- SERVICES SNAPSHOT -->
+  <section class="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="gold-line"></div>
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">FIVE DIVISIONS.<br>ONE TRUSTED TEAM.</h2>
+        <p class="section-body">From your home to your business — KMFG Solutions delivers across five core service divisions, all under one roof.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal delay-1">
+          <div class="svc-num">01</div>
+          <div class="svc-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <h3>PROPERTY MAINTENANCE & CONSTRUCTION</h3>
+          <p>Site Clearance, General Building, Handyman Services, Pool Construction, Steelworks, Plumbing, Electrical and Appliance Repairs.</p>
+          <a href="services.html" class="svc-link">View Service →</a>
+        </div>
+        <div class="svc-card reveal delay-2">
+          <div class="svc-num">02</div>
+          <div class="svc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>SECURITY SERVICES & SOLUTIONS</h3>
+          <p>Armed Response, CCTV, Alarm Systems, Access Control, Gate Automation, Electric Fencing and On-Site Security Personnel.</p>
+          <a href="services.html" class="svc-link">View Service →</a>
+        </div>
+        <div class="svc-card reveal delay-3">
+          <div class="svc-num">03</div>
+         <div class="svc-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <h3>LOGISTICS MANAGEMENT</h3>
+          <p>Logistics, Moving, Delivery, Procurement, Warehousing, Distribution, Shuttle and Chauffeur Services.</p>
+          <a href="services.html" class="svc-link">View Service →</a>
+        </div>
+        <div class="svc-card reveal delay-2">
+          <div class="svc-num">04</div>
+         <div class="svc-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>MARKETING SOLUTIONS</h3>
+          <p>Social Media Management, Product Launches, Photography, Videography, Billboards, Pamphlets and Visual Marketing.</p>
+          <a href="services.html" class="svc-link">View Service →</a>
+        </div>
+        <div class="svc-card reveal delay-3">
+          <div class="svc-num">05</div>
+          <div class="svc-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>PROJECT MANAGEMENT</h3>
+          <p>Scope, Cost, Time, Procurement, Quality and Risk Management — Giving peace of mind to developers, Investors and Businesses.</p>
+          <a href="services.html" class="svc-link">View Service →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY KMFG -->
+  <section class="why">
+    <div class="container why-inner">
+      <div>
+        <div class="section-head reveal">
+          <div class="gold-line"></div>
+          <p class="section-label">Why KMFG Solutions</p>
+          <h2 class="section-title">OUR<br>COMMITMENT</h2>
+        </div>
+        <div class="why-list">
+          <div class="why-item reveal delay-1">
+            <div class="why-idx">01</div>
+            <div>
+              <h4>Unwavering Quality</h4>
+              <p>Highest level of service excellence, fair pricing, and attention to every detail — no exceptions.</p>
             </div>
-        </section>
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class = "projects-grid" id="projects-grid">
-                
+          </div>
+          <div class="why-item reveal delay-2">
+            <div class="why-idx">02</div>
+            <div>
+              <h4>Professional Integrity</h4>
+              <p>Honesty and fairness in all dealings. Transparent communication with every partner and client.</p>
             </div>
-            </p>        
-        </section>    
-    </main>
-    <footer>
-        <p>Built from Scratch. Day 1.</p>
-    </footer>
-     <script src="script.js"></script>
+          </div>
+          <div class="why-item reveal delay-3">
+            <div class="why-idx">03</div>
+            <div>
+              <h4>Innovation & Growth</h4>
+              <p>Fostering new ideas, supporting motivated teams, and committing to continuous improvement.</p>
+            </div>
+          </div>
+          <div class="why-item reveal delay-4">
+            <div class="why-idx">04</div>
+            <div>
+              <h4>B-BBEE Level 1</h4>
+              <p>100% Black owned and proudly South African — committed to sustainable transformation and economic growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal-left delay-2">
+        <div class="why-box">
+          <div class="why-big-num" data-count="100">0</div>
+          <div class="why-big-label">% Black Owned · B-BBEE Level 1</div>
+          <div class="why-tags">
+            <span class="tag">Construction</span>
+            <span class="tag">Plumbing</span>
+            <span class="tag">Electrical</span>
+            <span class="tag">Security</span>
+            <span class="tag">CCTV</span>
+            <span class="tag">Gate Automation</span>
+            <span class="tag">Electric Fencing</span>
+            <span class="tag">Logistics</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">Project Management</span>
+            <span class="tag">Randburg Based</span>
+            <span class="tag">Gauteng & Beyond</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg-text">SOLUTIONS</div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>START YOUR <span>PROJECT</span><br>TODAY.</h2>
+        <p>Based in Randburg — serving Gauteng and all of South Africa. Free quote, no obligation.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-gold">Get a Free Quote</a>
+          <a href="gallery.html" class="btn btn-ghost">See Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link">
+            <img src="assets/images/logo.png" alt="KMFG Solutions" class="logo-img logo-img-footer">
+          </a>
+          <p>KMFG Solutions Pty Ltd — a B-BBEE Level 1, 100% Black owned business. Reg. 2026/486422/07. Based in Randburg, serving Gauteng and all of South Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <a href="tel:0659882436"><i class="fa-solid fa-phone"></i> 065 988 2436</a>
+          <a href="https://wa.me/27659882436" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:khulumlambofamilygroup@gmail.com"><i class="fa-solid fa-envelope"></i> KMFG@Consultant.com</a>
+          <a href="https://www.facebook.com/share/18n5E9DChx/" target="_blank"><i class="fa-brands fa-facebook-f"></i> KMFG Solutions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KMFG Solutions Pty Ltd. Reg. 2026/486422/07. All rights reserved.</p>
+        <p class="footer-credit">Built by <span>ZypherixLabs</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="Zypherix-lock.js"></script>
+  <script src="countdown.js"></script>
+  <script src="loader.js"></SCRIPT>
+    <script src="theme.js"></script>
 </body>
 </html>
